@@ -5,4 +5,3 @@ repos:
         name: Forbid snake_case filenames
         entry: bash -c 'if git ls-files | grep -E "_"; then echo "❌ Snake_case filenames are not allowed!"; exit 1; fi'
         language: system
-        types: [*.txt]
